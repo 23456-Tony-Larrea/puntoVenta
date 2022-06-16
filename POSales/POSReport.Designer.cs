@@ -66,11 +66,11 @@ namespace POSales
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(339, 15);
+            this.label1.Location = new System.Drawing.Point(278, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(327, 18);
+            this.label1.Size = new System.Drawing.Size(595, 23);
             this.label1.TabIndex = 0;
-            this.label1.Text = "PRINT PREVIEW FOR POINT OF SALES RECORD";
+            this.label1.Text = "VISTA PREVIA DE IMPRESIÓN PARA REGISTRO DE PUNTO DE VENTA";
             // 
             // reportViewer1
             // 
@@ -83,7 +83,7 @@ namespace POSales
             // 
             // POSReport
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1019, 586);

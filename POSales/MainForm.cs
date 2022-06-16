@@ -189,9 +189,9 @@ namespace POSales
             {
                 i++;
                 Alert alert = new Alert(this);
-                alert.lblPcode.Text = dr["pcode"].ToString();
+                alert.lblPcode.Text = dr["codigo"].ToString();
                 alert.btnReorder.Enabled = true;
-                alert.showAlert(i + ". " + dr["pdesc"].ToString() + " - " + dr["qty"].ToString());
+                alert.showAlert(i + ". " + dr["pDesc"].ToString() + " - " + dr["cantidad"].ToString());
             }
             dr.Close();
             cn.Close();

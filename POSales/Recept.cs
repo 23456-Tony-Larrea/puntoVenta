@@ -64,7 +64,7 @@ namespace POSales
                 SqlDataAdapter da = new SqlDataAdapter();
 
                 cn.Open();
-                da.SelectCommand = new SqlCommand("SELECT c.id, c.transno, c.pcode, c.price, c.qty, c.disc, c.total, c.sdate, c.status, p.pdesc FROM tbCart AS c INNER JOIN tbProduct AS p ON p.pcode=c.pcode WHERE c.transno LIKE '"+cashier.lblTranNo.Text+"'",cn);
+                da.SelectCommand = new SqlCommand("SELECT c.id, c.trasnno, c.pcode, c.price, c.cantidad, c.disc, c.total, c.sdate, c.status, p.pDesc FROM Carrito AS c INNER JOIN Productos AS p ON p.codigo=c.pcode WHERE c.trasnno LIKE '"+cashier.lblTranNo.Text+"'",cn);
                 da.Fill(ds.Tables["dtRecept"]);
                 cn.Close();
 

@@ -66,10 +66,10 @@ namespace POSales
                     return;
                 }
                 cn.Open();
-                cm = new SqlCommand("Insert into Usuarios(username, contraseña, rol, nambre) Values (@username, @contraseña, @rol, @nombre)", cn);
-                cm.Parameters.AddWithValue("@usuario", txtUsername.Text);
+                cm = new SqlCommand("Insert into Usuarios(username, contraseña, role, nombre) Values (@username, @contraseña, @role, @nombre)", cn);
+                cm.Parameters.AddWithValue("@username", txtUsername.Text);
                 cm.Parameters.AddWithValue("@contraseña", txtPass.Text);
-                cm.Parameters.AddWithValue("@rol", cbRole.Text);
+                cm.Parameters.AddWithValue("@role", cbRole.Text);
                 cm.Parameters.AddWithValue("@nombre", txtName.Text);
                 cm.ExecuteNonQuery();
                 cn.Close();
@@ -104,7 +104,7 @@ namespace POSales
                     return;
                 }
 
-                dbcon.ExecuteQuery("UPDATE Usuarios SET = contraseña '" + txtNPass.Text + "' WHERE username='" + lblUsername.Text + "'");
+                dbcon.ExecuteQuery("UPDATE Usuarios SET  contraseña = '" + txtNPass.Text + "' WHERE username='" + lblUsername.Text + "'");
                 MessageBox.Show("Contraseña cambiada con exito!", "Cambio de contraseña", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
@@ -181,6 +181,9 @@ namespace POSales
             properties.ShowDialog();
         }
 
+        private void dgvUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
+        }
     }
 }

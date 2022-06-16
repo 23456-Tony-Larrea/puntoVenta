@@ -39,9 +39,9 @@ namespace POSales
                 if ((MessageBox.Show("Está seguro de que desea cambiar las propiedades de esta cuenta?", "Cambiar propiedades", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes))
                  {
                     cn.Open();
-                    cm = new SqlCommand("UPDATE Usuarios SET nombre=@nombre, rol=@rol, isactive=@isactive WHERE username='" + username + "'",cn);
+                    cm = new SqlCommand("UPDATE Usuarios SET nombre=@nombre, role=@role, isactive=@isactive WHERE username='" + username + "'",cn);
                     cm.Parameters.AddWithValue("@nombre", txtName.Text);
-                    cm.Parameters.AddWithValue("@rol", cbRole.Text);
+                    cm.Parameters.AddWithValue("@role", cbRole.Text);
                     cm.Parameters.AddWithValue("@isactive", cbActivate.Text);
                     cm.ExecuteNonQuery();
                     cn.Close();

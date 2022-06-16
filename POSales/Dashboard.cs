@@ -24,10 +24,10 @@ namespace POSales
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-            string sdate = DateTime.Now.ToShortDateString();
-            lblDalySale.Text = dbcon.ExtractData("SELECT ISNULL(SUM(total),0) AS total FROM tbCart WHERE status LIKE 'Sold' AND sdate BETWEEN '"+sdate+ "' AND '" + sdate + "'").ToString("#,##0.00");
-            lblTotalProduct.Text = dbcon.ExtractData("SELECT COUNT(*) FROM tbProduct").ToString("#,##0");
-            lblStockOnHand.Text = dbcon.ExtractData("SELECT ISNULL(SUM(qty), 0) AS qty FROM tbProduct").ToString("#,##0");
+            string sdate = DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss");
+            lblDalySale.Text = dbcon.ExtractData("SELECT ISNULL(SUM(total),0) AS total FROM Carrito WHERE status LIKE 'Sold' AND sdate BETWEEN '"+sdate + "' AND '" + sdate + "'").ToString("#,##0.00");
+            lblTotalProduct.Text = dbcon.ExtractData("SELECT COUNT(*) FROM Productos").ToString("#,##0");
+            lblStockOnHand.Text = dbcon.ExtractData("SELECT ISNULL(SUM(cantidad), 0) AS cantidad FROM Productos").ToString("#,##0");
             lblCriticalItems.Text = dbcon.ExtractData("SELECT COUNT(*) FROM vwCriticalItems").ToString("#,##0"); 
         }
 

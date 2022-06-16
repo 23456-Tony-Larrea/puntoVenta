@@ -77,8 +77,8 @@ namespace POSales
             // 
             this.cbActivate.FormattingEnabled = true;
             this.cbActivate.Items.AddRange(new object[] {
-            "Verdadero",
-            "Falso"});
+            "True",
+            "False"});
             this.cbActivate.Location = new System.Drawing.Point(213, 108);
             this.cbActivate.Name = "cbActivate";
             this.cbActivate.Size = new System.Drawing.Size(342, 30);
@@ -89,7 +89,7 @@ namespace POSales
             this.cbRole.FormattingEnabled = true;
             this.cbRole.Items.AddRange(new object[] {
             "Administrator",
-            "Cashier"});
+            "cashier"});
             this.cbRole.Location = new System.Drawing.Point(213, 62);
             this.cbRole.Name = "cbRole";
             this.cbRole.Size = new System.Drawing.Size(342, 30);

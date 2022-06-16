@@ -40,18 +40,18 @@ namespace POSales
         {
             cbSupplier.Items.Clear();
             cbSupplier.DataSource =dbcon.getTable("SELECT * FROM Proveedores");
-            cbSupplier.DisplayMember = "proveedores";
+            cbSupplier.DisplayMember = "proveedor";
         }
 
         public void ProductForSupplier(string pcode)
         {
             string supplier = "";
             cn.Open();
-            cm = new SqlCommand("SELECT * FROM vwStockIn WHERE pcode LIKE '" + pcode + "'", cn);
+            cm = new SqlCommand("SELECT * FROM vwEnStock WHERE pcode LIKE '" + pcode + "'", cn);
             dr = cm.ExecuteReader();
             while(dr.Read())
             {
-                supplier = dr["supplier"].ToString();
+                supplier = dr["proveedor"].ToString();
             }
             dr.Close();
             cn.Close();
@@ -63,7 +63,7 @@ namespace POSales
             int i = 0;
             dgvStockIn.Rows.Clear();
             cn.Open();
-            cm = new SqlCommand("SELECT * FROM vwEnStock WHERE refno LIKE '" + txtRefNo.Text + "' AND status LIKE 'Pendiente'", cn);
+            cm = new SqlCommand("SELECT * FROM vwEnStock WHERE refno LIKE '" + txtRefNo.Text + "' AND status LIKE 'Pending'", cn);
             dr = cm.ExecuteReader();
             while(dr.Read())
             {
@@ -114,7 +114,7 @@ namespace POSales
 
                             //update stockin quantity
                             cn.Open();
-                            cm = new SqlCommand("UPDATE Enstock SET qty = qty + " + int.Parse(dgvStockIn.Rows[i].Cells[5].Value.ToString()) + ", status='Done' WHERE id LIKE '" + dgvStockIn.Rows[i].Cells[1].Value.ToString() + "'", cn);
+                            cm = new SqlCommand("UPDATE Enstock SET qty = qty + " + int.Parse(dgvStockIn.Rows[i].Cells[5].Value.ToString()) + ", status='Done' WHERE Id LIKE '" + dgvStockIn.Rows[i].Cells[1].Value.ToString() + "'", cn);
                             cm.ExecuteNonQuery();
                             cn.Close();
                         }
@@ -162,12 +162,12 @@ namespace POSales
                 int i = 0;
                 dgvInStockHistory.Rows.Clear();
                 cn.Open();
-                cm = new SqlCommand("SELECT * FROM vwStockIn WHERE CAST(sdate as date) BETWEEN '"+dtFrom.Value.ToShortDateString()+ "' AND '" + dtTo.Value.ToShortDateString() + "' AND status LIKE 'Done'", cn);
+                cm = new SqlCommand("SELECT * FROM vwEnStock WHERE CAST(sdate as date) BETWEEN '"+dtFrom.Value.Date.ToString("yyyy/MM/dd")+ "' AND '" + dtTo.Value.Date.ToString("yyyy/MM/dd") + "' AND status LIKE 'Done'", cn);
                 dr = cm.ExecuteReader();
                 while (dr.Read())
                 {
                     i++;
-                    dgvInStockHistory.Rows.Add(i, dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[4].ToString(), DateTime.Parse(dr[5].ToString()).ToShortDateString(), dr[6].ToString(), dr["supplier"].ToString());
+                    dgvInStockHistory.Rows.Add(i, dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[4].ToString(), DateTime.Parse(dr[5].ToString()).ToShortDateString(), dr[6].ToString(), dr["proveedor"].ToString());
 
                 }
                 dr.Close();

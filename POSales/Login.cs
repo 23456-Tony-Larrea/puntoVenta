@@ -19,7 +19,7 @@ namespace POSales
         SqlDataReader dr;
 
         public string _pass = "";
-        public bool _isactivate;
+        public bool _isactive;
         public Login()
         {
             InitializeComponent();
@@ -52,9 +52,9 @@ namespace POSales
                     found = true;
                     _username = dr["username"].ToString();
                     _name = dr["nombre"].ToString();
-                    _role = dr["rol"].ToString();
+                    _role = dr["role"].ToString();
                     _pass = dr["contraseña"].ToString();
-                    _isactivate = bool.Parse(dr["isactive"].ToString());
+                    _isactive = bool.Parse(dr["isactive"].ToString());
 
                 }
                 else
@@ -66,12 +66,12 @@ namespace POSales
 
                 if(found)
                 {
-                    if(!_isactivate)
+                    if(!_isactive)
                     {
                         MessageBox.Show("La cuenta está desactivada.Incapaz de iniciar sesión", "Cuenta inactiva", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
-                    if(_role=="Cajero/a")
+                    if(_role== "cashier")
                     {
                         MessageBox.Show("Bienvenido " + _name + " |", "ACCESSO CONCEBIDO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         txtName.Clear();
@@ -100,7 +100,7 @@ namespace POSales
                     MessageBox.Show("nombre de usuario y contraseña inválidos!", "ACCESS DENEGADO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-            catch (Exception ex)
+            catch (SqlException ex)
             {
                 cn.Close();
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

@@ -1,0 +1,300 @@
+﻿++Solución "POSales" ‎(1 de 1 proyecto)
+i:{00000000-0000-0000-0000-000000000000}:POSales.sln
+++POSales
+i:{00000000-0000-0000-0000-000000000000}:POSales
+++Properties
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\properties\
+++Referencias
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:
+++Image
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\image\
+++SqlServerTypes
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\sqlservertypes\
+++Adjustments.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\adjustments.cs
+++Alert.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\alert.cs
+++App.config
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\app.config
+++Brand.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\brand.cs
+++BrandModule.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\brandmodule.cs
+++CancelOrder.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\cancelorder.cs
+++Cashier.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\cashier.cs
+++Category.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\category.cs
+++CategoryModule.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\categorymodule.cs
+++ChangePassword.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\changepassword.cs
+++DailySale.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\dailysale.cs
+++Dashboard.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\dashboard.cs
+++DataSet1.xsd
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\dataset1.xsd
+++DBConnect.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\dbconnect.cs
+++Discount.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\discount.cs
+++Login.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\login.cs
+++LookUpProduct.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\lookupproduct.cs
+++MainForm.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\mainform.cs
+++MetroFramework.txt
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\metroframework.txt
+++packages.config
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\packages.config
+++POSReport.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\posreport.cs
+++Product.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\product.cs
+++ProductModule.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\productmodule.cs
+++ProductStockIn.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\productstockin.cs
+++Program.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\program.cs
+++Qty.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\qty.cs
+++Recept.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\recept.cs
+++Record.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\record.cs
+++ResetPassword.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\resetpassword.cs
+++rptCancelled.rdlc
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\rptcancelled.rdlc
+++rptInventory.rdlc
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\rptinventory.rdlc
+++rptRecept.rdlc
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\rptrecept.rdlc
+++rptSoldItems.rdlc
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\rptsolditems.rdlc
+++rptSoldReport.rdlc
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\rptsoldreport.rdlc
+++rptStockInHist.rdlc
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\rptstockinhist.rdlc
+++rptTopSell.rdlc
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\rpttopsell.rdlc
+++Settle.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\settle.cs
+++StockIn.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\stockin.cs
+++Store.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\store.cs
+++Supplier.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\supplier.cs
+++SupplierModule.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\suppliermodule.cs
+++ThemeColor.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\themecolor.cs
+++UserAccount.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\useraccount.cs
+++UserProperties.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\userproperties.cs
+++Void.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\void.cs
+++AssemblyInfo.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\properties\assemblyinfo.cs
+++Resources.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\properties\resources.resx
+++Settings.settings
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\properties\settings.settings
+++MetroFramework
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:
+++MetroFramework.Design
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:
+++MetroFramework.Fonts
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:
+++Microsoft.CSharp
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:
+++Microsoft.ReportViewer.Common
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:
+++Microsoft.ReportViewer.DataVisualization
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:
+++Microsoft.ReportViewer.Design
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:
+++Microsoft.ReportViewer.ProcessingObjectModel
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:
+++Microsoft.ReportViewer.WebForms
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:
+++Microsoft.ReportViewer.WinForms
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:
+++Microsoft.SqlServer.Types
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:
+++System
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:
+++System.Core
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:
+++System.Data
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:
+++System.Data.DataSetExtensions
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:
+++System.Deployment
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:
+++System.Drawing
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:
+++System.Net.Http
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:
+++System.Windows.Forms
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:
+++System.Xml
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:
+++System.Xml.Linq
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:
+++x64
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\sqlservertypes\x64\
+++x86
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\sqlservertypes\x86\
+++Loader.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\sqlservertypes\loader.cs
+++readme.htm
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\sqlservertypes\readme.htm
+++Adjustments.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\adjustments.designer.cs
+++Adjustments.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\adjustments.resx
+++Alert.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\alert.designer.cs
+++Alert.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\alert.resx
+++Brand.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\brand.designer.cs
+++Brand.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\brand.resx
+++BrandModule.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\brandmodule.designer.cs
+++BrandModule.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\brandmodule.resx
+++CancelOrder.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\cancelorder.designer.cs
+++CancelOrder.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\cancelorder.resx
+++Cashier.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\cashier.designer.cs
+++Cashier.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\cashier.resx
+++Category.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\category.designer.cs
+++Category.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\category.resx
+++CategoryModule.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\categorymodule.designer.cs
+++CategoryModule.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\categorymodule.resx
+++ChangePassword.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\changepassword.designer.cs
+++ChangePassword.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\changepassword.resx
+++DailySale.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\dailysale.designer.cs
+++DailySale.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\dailysale.resx
+++Dashboard.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\dashboard.designer.cs
+++Dashboard.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\dashboard.resx
+++DataSet1.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\dataset1.cs
+++DataSet1.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\dataset1.designer.cs
+++DataSet1.xsc
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\dataset1.xsc
+++DataSet1.xss
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\dataset1.xss
+++Discount.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\discount.designer.cs
+++Discount.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\discount.resx
+++Login.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\login.designer.cs
+++Login.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\login.resx
+++LookUpProduct.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\lookupproduct.designer.cs
+++LookUpProduct.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\lookupproduct.resx
+++MainForm.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\mainform.designer.cs
+++MainForm.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\mainform.resx
+++POSReport.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\posreport.designer.cs
+++POSReport.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\posreport.resx
+++Product.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\product.designer.cs
+++Product.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\product.resx
+++ProductModule.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\productmodule.designer.cs
+++ProductModule.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\productmodule.resx
+++ProductStockIn.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\productstockin.designer.cs
+++ProductStockIn.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\productstockin.resx
+++Qty.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\qty.designer.cs
+++Qty.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\qty.resx
+++Recept.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\recept.designer.cs
+++Recept.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\recept.resx
+++Record.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\record.designer.cs
+++Record.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\record.resx
+++ResetPassword.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\resetpassword.designer.cs
+++ResetPassword.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\resetpassword.resx
+++Settle.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\settle.designer.cs
+++Settle.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\settle.resx
+++StockIn.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\stockin.designer.cs
+++StockIn.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\stockin.resx
+++Store.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\store.designer.cs
+++Store.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\store.resx
+++Supplier.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\supplier.designer.cs
+++Supplier.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\supplier.resx
+++SupplierModule.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\suppliermodule.designer.cs
+++SupplierModule.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\suppliermodule.resx
+++UserAccount.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\useraccount.designer.cs
+++UserAccount.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\useraccount.resx
+++UserProperties.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\userproperties.designer.cs
+++UserProperties.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\userproperties.resx
+++Void.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\void.designer.cs
+++Void.resx
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\void.resx
+++Resources.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\properties\resources.designer.cs
+++Settings.Designer.cs
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\properties\settings.designer.cs
+++msvcr120.dll
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\sqlservertypes\x64\msvcr120.dll
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\sqlservertypes\x86\msvcr120.dll
+++SqlServerSpatial140.dll
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\sqlservertypes\x64\sqlserverspatial140.dll
+i:{d3f11b4e-1b68-4fc6-adeb-bb93f1bb5c34}:d:\pint of sales\posalesviews\posales\sqlservertypes\x86\sqlserverspatial140.dll

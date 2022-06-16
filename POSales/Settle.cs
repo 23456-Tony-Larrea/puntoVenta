@@ -100,7 +100,7 @@ namespace POSales
                     for(int i=0; i< cashier.dgvCash.Rows.Count; i++ )
                     {
                         cn.Open();
-                        cm = new SqlCommand("UPDATE Productos SET cantidad = cantidad - " + int.Parse(cashier.dgvCash.Rows[i].Cells[5].Value.ToString()) + "WHERE pcode= '" + cashier.dgvCash.Rows[i].Cells[2].Value.ToString() + "'", cn);
+                        cm = new SqlCommand("UPDATE Productos SET cantidad = cantidad - " + int.Parse(cashier.dgvCash.Rows[i].Cells[5].Value.ToString()) + "WHERE codigo= '" + cashier.dgvCash.Rows[i].Cells[2].Value.ToString() + "'", cn);
                         cm.ExecuteNonQuery();
                         cn.Close();
 

@@ -140,7 +140,7 @@ namespace POSales
                 double discount = 0;
                 dgvCash.Rows.Clear();
                 cn.Open();
-                cm = new SqlCommand("SELECT c.id, c.pcode, p.pDesc, c.price, c.cantidad, c.disc, c.total FROM Carrito AS c INNER JOIN Productos AS p ON c.pcode=p.codigo WHERE c.trasnno LIKE @trasnno and c.status LIKE 'Pendiente'", cn);
+                cm = new SqlCommand("SELECT c.id, c.pcode, p.pDesc, c.price, c.cantidad, c.disc, c.total FROM Carrito AS c INNER JOIN Productos AS p ON c.pcode=p.codigo WHERE c.trasnno LIKE @trasnno and c.status LIKE 'Pending'", cn);
                 cm.Parameters.AddWithValue("@trasnno", lblTranNo.Text);
                 dr = cm.ExecuteReader();
                 while (dr.Read())
@@ -301,13 +301,13 @@ namespace POSales
                         return;
                     }
                     cn.Open();
-                    cm = new SqlCommand("INSERT INTO Carrito(trasnno, pcode, price, cantidad, sdate, cajero/a)VALUES(@trasnno, @pcode, @price, @cantidad, @sdate, @cajero/a)", cn);
+                    cm = new SqlCommand("INSERT INTO Carrito(trasnno, pcode, price, cantidad, sdate, cashier)VALUES(@trasnno, @pcode, @price, @cantidad, @sdate, @cashier)", cn);
                     cm.Parameters.AddWithValue("@trasnno", lblTranNo.Text);
                     cm.Parameters.AddWithValue("@pcode", _pcode);
                     cm.Parameters.AddWithValue("@price", _price);
                     cm.Parameters.AddWithValue("@cantidad", _qty);
                     cm.Parameters.AddWithValue("@sdate", DateTime.Now);
-                    cm.Parameters.AddWithValue("@cajero/a", lblUsername.Text);
+                    cm.Parameters.AddWithValue("@cashier", lblUsername.Text);
                     cm.ExecuteNonQuery();
                     cn.Close();
                     LoadCart();
@@ -344,12 +344,12 @@ namespace POSales
             {
                 int i = 0;
                 cn.Open();
-                cm = new SqlCommand("SELECT SUM(cantidad) as cantidad FROM Productos WHERE codigo LIKE'" + dgvCash.Rows[e.RowIndex].Cells[2].Value.ToString() + "' GROUP BY pcode", cn);
+                cm = new SqlCommand("SELECT SUM(cantidad) as cantidad FROM Productos WHERE codigo LIKE'" + dgvCash.Rows[e.RowIndex].Cells[2].Value.ToString() + "' GROUP BY codigo", cn);
                 i = int.Parse(cm.ExecuteScalar().ToString());
                 cn.Close();
                 if (int.Parse(dgvCash.Rows[e.RowIndex].Cells[5].Value.ToString()) < i)
                 {
-                    dbcon.ExecuteQuery("UPDATE Carrito SET cantidad = cantidad + " + int.Parse(txtQty.Text) + " WHERE trasnno LIKE '" + lblTranNo.Text + "'  AND codigo LIKE '" + dgvCash.Rows[e.RowIndex].Cells[2].Value.ToString() + "'");
+                    dbcon.ExecuteQuery("UPDATE Carrito SET cantidad = cantidad + " + int.Parse(txtQty.Text) + " WHERE trasnno LIKE '" + lblTranNo.Text + "'  AND pcode LIKE '" + dgvCash.Rows[e.RowIndex].Cells[2].Value.ToString() + "'");
                     LoadCart();
                 }
                 else
@@ -388,8 +388,8 @@ namespace POSales
             {
                 i++;
                 Alert alert = new Alert(new MainForm());
-                alert.lblPcode.Text = dr["pcode"].ToString();
-                alert.showAlert(i + ". " + dr["pdesc"].ToString() + " - " + dr["qty"].ToString());
+                alert.lblPcode.Text = dr["codigo"].ToString();
+                alert.showAlert(i + ". " + dr["pDesc"].ToString() + " - " + dr["cantidad"].ToString());
             }
             dr.Close();
             cn.Close();

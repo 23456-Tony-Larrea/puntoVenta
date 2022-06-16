@@ -89,13 +89,13 @@ namespace POSales
                             return;
                         }
                         cn.Open();
-                        cm = new SqlCommand("INSERT INTO Carrito(trasnno, pcode, price, cantidad, sdate, cajero/a)VALUES(@trasnno, @pcode, @price, @cantidad, @sdate, @cajero/a)", cn);
+                        cm = new SqlCommand("INSERT INTO Carrito(trasnno, pcode, price, cantidad, sdate, cashier)VALUES(@trasnno, @pcode, @price, @cantidad, @sdate, @cashier)", cn);
                         cm.Parameters.AddWithValue("@trasnno", transno);
                         cm.Parameters.AddWithValue("@pcode", pcode);
                         cm.Parameters.AddWithValue("@price", price);
                         cm.Parameters.AddWithValue("@cantidad", int.Parse(txtQty.Text));
                         cm.Parameters.AddWithValue("@sdate", DateTime.Now);
-                        cm.Parameters.AddWithValue("@cajero/a", cashier.lblUsername.Text);
+                        cm.Parameters.AddWithValue("@cashier", cashier.lblUsername.Text);
                         cm.ExecuteNonQuery();
                         cn.Close();
                         cashier.txtBarcode.Clear();

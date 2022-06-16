@@ -34,7 +34,7 @@ namespace POSales
             while (dr.Read())
             {
                 i++;
-                dgvSupplier.Rows.Add(i, dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[4].ToString(), dr[5].ToString(), dr[6].ToString());
+                dgvSupplier.Rows.Add(i, dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[4].ToString(), dr[5].ToString(), dr[6].ToString(), dr[7].ToString(), dr[8].ToString(), dr[9].ToString(), dr[10].ToString(), dr[11].ToString(), dr[12].ToString(), dr[13].ToString(), dr[14].ToString(), dr[15].ToString());
 
             }
             dr.Close();
@@ -60,7 +60,15 @@ namespace POSales
                 supplierModule.txtPhone.Text = dgvSupplier.Rows[e.RowIndex].Cells[5].Value.ToString();
                 supplierModule.txtEmail.Text = dgvSupplier.Rows[e.RowIndex].Cells[6].Value.ToString();
                 supplierModule.txtFaxNo.Text = dgvSupplier.Rows[e.RowIndex].Cells[7].Value.ToString();
-
+                supplierModule.txtCity.Text = dgvSupplier.Rows[e.RowIndex].Cells[12].Value.ToString();
+                supplierModule.txtCountry.Text = dgvSupplier.Rows[e.RowIndex].Cells[13].Value.ToString();
+                supplierModule.txtReasonS.Text = dgvSupplier.Rows[e.RowIndex].Cells[8].Value.ToString();
+                supplierModule.txtCiRuc.Text = dgvSupplier.Rows[e.RowIndex].Cells[9].Value.ToString();
+                supplierModule.txtDays.Text = dgvSupplier.Rows[e.RowIndex].Cells[10].Value.ToString();
+                supplierModule.txtPageWeb.Text = dgvSupplier.Rows[e.RowIndex].Cells[16].Value.ToString();
+                supplierModule.txtCPostal.Text = dgvSupplier.Rows[e.RowIndex].Cells[15].Value.ToString();
+                supplierModule.txtProvince.Text = dgvSupplier.Rows[e.RowIndex].Cells[14].Value.ToString();
+                supplierModule.cboState.Text = dgvSupplier.Rows[e.RowIndex].Cells[11].Value.ToString();
                 supplierModule.btnSave.Enabled = false;
                 supplierModule.btnUpdate.Enabled = true;
                 supplierModule.ShowDialog();

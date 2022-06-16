@@ -36,7 +36,7 @@ namespace POSales
         {
             int i = 0;
             dgvProduct.Rows.Clear();
-            cm = new SqlCommand("SELECT p.codigo, p.codigoBarras, p.pDesc, b.marca, c.categoria, p.precio, p.cantidad FROM Productos AS p INNER JOIN Marcas AS b ON b.id = p.bid INNER JOIN Categorias AS c on c.id = p.cid WHERE CONCAT(p.pDesc, b.marca, c.categoria) LIKE '%" + txtSearch.Text + "%'", cn);
+            cm = new SqlCommand("SELECT p.codigo, p.codigoBarras, p.pDesc, b.marca, c.Categoria, p.precio, p.cantidad FROM Productos AS p INNER JOIN Marcas AS b ON b.Id = p.bid INNER JOIN Categorias AS c on c.Id = p.cid WHERE CONCAT(p.pDesc, b.marca, c.Categoria) LIKE '%" + txtSearch.Text + "%'", cn);
             cn.Open();
             dr = cm.ExecuteReader();
             while (dr.Read())

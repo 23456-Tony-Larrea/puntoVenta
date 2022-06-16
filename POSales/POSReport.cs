@@ -30,7 +30,7 @@ namespace POSales
         public void LoadStore()
         {
             cn.Open();
-            cm = new SqlCommand("SELECT * FROM tbStore", cn);
+            cm = new SqlCommand("SELECT * FROM Tiendas", cn);
             dr = cm.ExecuteReader();
             dr.Read();
             if (dr.HasRows)

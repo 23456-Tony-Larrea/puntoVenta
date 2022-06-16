@@ -101,7 +101,7 @@ namespace POSales
             this.btnLogout.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnLogout.Size = new System.Drawing.Size(179, 45);
             this.btnLogout.TabIndex = 9;
-            this.btnLogout.Text = "Logout";
+            this.btnLogout.Text = "Salir";
             this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
@@ -128,7 +128,7 @@ namespace POSales
             this.btnStore.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnStore.Size = new System.Drawing.Size(179, 45);
             this.btnStore.TabIndex = 5;
-            this.btnStore.Text = "Store";
+            this.btnStore.Text = "Tienda";
             this.btnStore.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStore.UseVisualStyleBackColor = true;
             this.btnStore.Click += new System.EventHandler(this.btnStore_Click);
@@ -144,7 +144,7 @@ namespace POSales
             this.btnUser.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnUser.Size = new System.Drawing.Size(179, 45);
             this.btnUser.TabIndex = 4;
-            this.btnUser.Text = "User";
+            this.btnUser.Text = "Usuarios";
             this.btnUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUser.UseVisualStyleBackColor = true;
             this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
@@ -160,7 +160,7 @@ namespace POSales
             this.btnSetting.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnSetting.Size = new System.Drawing.Size(179, 45);
             this.btnSetting.TabIndex = 7;
-            this.btnSetting.Text = "Setting";
+            this.btnSetting.Text = "Configuracion";
             this.btnSetting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSetting.UseVisualStyleBackColor = true;
             this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
@@ -187,7 +187,7 @@ namespace POSales
             this.btnPosRecord.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnPosRecord.Size = new System.Drawing.Size(179, 45);
             this.btnPosRecord.TabIndex = 5;
-            this.btnPosRecord.Text = "POS Record";
+            this.btnPosRecord.Text = "POS Registro";
             this.btnPosRecord.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPosRecord.UseVisualStyleBackColor = true;
             this.btnPosRecord.Click += new System.EventHandler(this.btnPosRecord_Click);
@@ -203,7 +203,7 @@ namespace POSales
             this.btnSaleHist.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnSaleHist.Size = new System.Drawing.Size(179, 45);
             this.btnSaleHist.TabIndex = 4;
-            this.btnSaleHist.Text = "Sale History";
+            this.btnSaleHist.Text = "hist ventas";
             this.btnSaleHist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSaleHist.UseVisualStyleBackColor = true;
             this.btnSaleHist.Click += new System.EventHandler(this.btnSaleHist_Click);
@@ -235,7 +235,7 @@ namespace POSales
             this.btnSupplier.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnSupplier.Size = new System.Drawing.Size(179, 45);
             this.btnSupplier.TabIndex = 4;
-            this.btnSupplier.Text = "Supplier";
+            this.btnSupplier.Text = "Proveedor";
             this.btnSupplier.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSupplier.UseVisualStyleBackColor = true;
             this.btnSupplier.Click += new System.EventHandler(this.btnSupplier_Click);

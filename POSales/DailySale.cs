@@ -35,9 +35,9 @@ namespace POSales
         public void LoadCashier()
         {
             cboCashier.Items.Clear();
-            cboCashier.Items.Add("All Cashier");
+            cboCashier.Items.Add("Selecciona cashier");
             cn.Open();
-            cm = new SqlCommand("SELECT * FROM Usuario WHERE role LIKE 'Cajero/a'", cn);
+            cm = new SqlCommand("SELECT * FROM Usuarios WHERE role LIKE 'cashier'", cn);
             dr = cm.ExecuteReader();
             while(dr.Read())
             {
@@ -52,20 +52,20 @@ namespace POSales
             double total = 0;
             dgvSold.Rows.Clear();
             cn.Open();
-            if(cboCashier.Text=="All Cashier")
+            if(cboCashier.Text== "Selecciona cashier")
             {
-                cm = new SqlCommand("select c.id, c.trasnno, c.pcode, p.pDesc, c.price, c.cantidad, c.disc, c.total from Carrito as c inner join Productos as p on c.pcode = p.codigo where status like 'Sold' and sdate between '" + dtFrom.Value + "' and '" + dtTo.Value + "'", cn);
+                cm = new SqlCommand("select c.id, c.trasnno, c.pcode, p.pDesc, c.price, c.cantidad, c.disc, c.total from Carrito as c inner join Productos as p on c.pcode = p.codigo where status like 'Sold' and sdate between '" + dtFrom.Value.Date.ToString("yyyy/MM/dd") + "' and '" + dtTo.Value.ToString("yyyy/MM/dd") + "'", cn);
             }
             else
             {
-                cm = new SqlCommand("select c.id, c.trasnno, c.pcode, p.pDesc, c.price, c.cantidad, c.disc, c.total from Carrito as c inner join Productos as p on c.pcode = p.codigo where status like 'Sold' and sdate between '" + dtFrom.Value + "' and '" + dtTo.Value + "' and Cajero/a like '" + cboCashier.Text + "'", cn);
+                cm = new SqlCommand("select c.id, c.trasnno, c.pcode, p.pDesc, c.price, c.cantidad, c.disc, c.total from Carrito as c inner join Productos as p on c.pcode = p.codigo where status like 'Sold' and sdate between '" + dtFrom.Value.Date.ToString("yyyy/MM/dd") + "' and '" + dtTo.Value.ToString("yyyy/MM/dd") + "' and cashier like '" + cboCashier.Text + "'", cn);
             }
             dr = cm.ExecuteReader();
             while(dr.Read())
             {
                 i++;
                 total += double.Parse(dr["total"].ToString());
-                dgvSold.Rows.Add(i, dr["id"].ToString(), dr["trasnno"].ToString(), dr["pcode"].ToString(), dr["pdesc"].ToString(), dr["price"].ToString(), dr["cantidd"].ToString(), dr["disc"].ToString(), dr["total"].ToString());
+                dgvSold.Rows.Add(i, dr["id"].ToString(), dr["trasnno"].ToString(), dr["pcode"].ToString(), dr["pdesc"].ToString(), dr["price"].ToString(), dr["cantidad"].ToString(), dr["disc"].ToString(), dr["total"].ToString());
             }
             dr.Close();
             cn.Close();
@@ -118,15 +118,15 @@ namespace POSales
         private void btnPrint_Click(object sender, EventArgs e)
         {
             POSReport report = new POSReport();
-            string param = "Date From: " + dtFrom.Value.ToShortDateString() + " To: " + dtTo.Value.ToShortDateString();
+            string param = "Fltrar por fecha: De " + dtFrom.Value.ToShortDateString() + " A: " + dtTo.Value.ToShortDateString();
                
-            if (cboCashier.Text == "All Cashier")
+            if (cboCashier.Text == "Selecciona cashier")
             {
-                report.LoadDailyReport("select c.id, c.trasnno, c.pcode, p.pDesc, c.price, c.cantidad, c.disc as discount, c.total from Carrito as c inner join Productos as p on c.pcode = p.codigo where status like 'Sold' and sdate between '" + dtFrom.Value + "' and '" + dtTo.Value + "'", param, cboCashier.Text);
+                report.LoadDailyReport("select c.id, c.trasnno, c.pcode, p.pDesc, c.price, c.cantidad, c.disc as discount, c.total from Carrito as c inner join Productos as p on c.pcode = p.codigo where status like 'Sold' and sdate between '" + dtFrom.Value.Date.ToString("yyyy/MM/dd") + "' and '" + dtTo.Value.Date.ToString("yyyy/MM/dd") + "'", param, cboCashier.Text);
             }
             else
             {
-                report.LoadDailyReport("select c.id, c.trasnno, c.pcode, p.pDesc, c.price, c.cantidad, c.disc as discount, c.total from Carrito as c inner join Productos as p on c.pcode = p.codigo where status like 'Sold' and sdate between '" + dtFrom.Value + "' and '" + dtTo.Value + "' and Cajero/a like '" + cboCashier.Text + "'", param, cboCashier.Text);
+                report.LoadDailyReport("select c.id, c.trasnno, c.pcode, p.pDesc, c.price, c.cantidad, c.disc as discount, c.total from Carrito as c inner join Productos as p on c.pcode = p.codigo where status like 'Sold' and sdate between '" + dtFrom.Value.Date.ToString("yyyy/MM/dd") + "' and '" + dtTo.Value.Date.ToString("yyyy/MM/dd") + "' and cashier like '" + cboCashier.Text + "'", param, cboCashier.Text);
             }
             report.ShowDialog();
         }
